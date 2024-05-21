@@ -196,9 +196,48 @@ else if (primeNum123 % 13 === 0) {
 } else  {
     console.log(`${primeNum123} is  prime number`)
 }
-
+////prime number array store
+//push
+//*******prirequests*****
+// let isPrime = true;
+//     isPrime = false;
+// Math.sqrt(num)
+// `${}`
+// break
+// (num % i === 0)
 //for loop find out prime number
 //again for loop describe
+
+
+  let num = 15
+    let isPrime3 = true;
+    for(let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            isPrime3 = false;
+            console.log('This number is not prime number')
+            break;
+        }
+        
+    }
+    if(isPrime3) {
+        console.log('number is prime number')
+    }
+
+
+for (let num = 2; num <= 100; num++) {
+    let isPrime3 = true;
+    for(let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            isPrime3 = false;
+            break;
+        }
+        
+    }
+    if(isPrime3) {
+        console.log(num)
+    }
+}
+
 let primeNum44 = 27;
 let isPrime = true;
 
@@ -220,15 +259,6 @@ if (isPrime) {
 }
 
 
-//prime number array store
-//push
-//*******prirequests*****
-// let isPrime = true;
-//     isPrime = false;
-// Math.sqrt(num)
-// `${}`
-// break
-// (num % i === 0)
 let primes = [];
 
 for (let num = 2; num <= 100; num++) {
@@ -252,18 +282,35 @@ for (let num = 2; num <= 100; num++) {
 
 console.log(primes);
 
-//****class wrong solution*********
-// let num = 27
-// let isPrime = true
-// for (let i = 2; i < num; i++) {
-//     if(num % i == 0) {
-//         console.log('number is not prime')
-//         isPrime = false;
+// let num = 3
+// for(let num = 1; num <= 100; num++) {
+
+// }
+
+// let isPrime2 = true
+// for (let i = 2; i <= num; i++) {
+//     if (num % i === 0) {
+//         console.log('Number is not prime');
+//         isPrime2 = false;
 //         break;
-//     } 
-//     if(isPrime) {
-//         console.log("Number is Prime")
-//         break
 //     }
 // }
+
+// if (isPrime2) {
+//     console.log("number is prime")
+// }
+
+for (let num = 2; num <= 100; num++) {
+    let isPrime3 = true;
+    for(let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            isPrime3 = false;
+            break;
+        }
+        
+    }
+    if(isPrime3) {
+        console.log(num)
+    }
+}
 
