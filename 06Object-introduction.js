@@ -94,3 +94,5 @@ console.log(subjects['math-teacher']) //right way
 //only campare the memory number not inside the value
 
 
+
+
