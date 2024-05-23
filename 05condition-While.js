@@ -132,3 +132,5 @@ console.log(user[key1])
 user.getFullName()
 
 user.getName()
+
+console.log('******')
