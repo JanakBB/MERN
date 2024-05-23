@@ -44,3 +44,53 @@ const userNumber1 = 'hello-janak'
 
 //we campaire only memory address or references
 
+//get value from object
+//1. .notation
+const MyName= "Janak";
+
+let  country = {
+    CountryName: 'Nepal',
+    'Capital-state': 'Kathmandu',
+    'Janak': 'CodeBook Pro'
+}
+
+console.log(country.CountryName)
+
+//[] notation
+console.log(country['Capital-state'])
+// console.log(country.Capital-state)//error 
+//[] notation is powerfull than . notation
+console.log(country.MyName)
+console.log(country[MyName])//CodeBook pro
+//javascript expression
+console.log(country['Capital' + '-' + 'state'])
+
+//How to update the object
+const subjects = {
+    bookName: 'Maths',
+    pageSize: 789,
+}
+
+console.log(subjects.units)
+
+subjects.units = 23//update the units in subjects object
+
+console.log(subjects)
+
+// subjects.math-teacher = 'Hira lal gupta';//wrong way
+
+subjects['math-teacher'] = 'Hira lal gupta'
+
+console.log(subjects)
+
+// console.log(subjects[math-teacher])// wrong way
+
+console.log(subjects['math-teacher']) //right way
+
+
+// one nested object and find address on memory
+//show the link of memory
+//update the inner object
+//only campare the memory number not inside the value
+
+
