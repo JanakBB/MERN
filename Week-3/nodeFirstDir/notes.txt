@@ -1,0 +1,7 @@
+# at first start project: npm init
+# package.json and package-lock.json is important file.
+# if you deleted node_modules: npm i
+# if you want special version: npm i express@3.1.1(express is examle)
+# if you want uninstall modules: npm un express
+# npm list: current modules list
+npm outdated 

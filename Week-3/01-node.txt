@@ -1,0 +1,39 @@
+client and server => req and res,
+
+ip address and domain,
+
+localhost and port number,
+
+server is broadway building and port number is like different classes,
+
+3000 is a common use web development,
+
+request object : req.url, req.method, req.headers(extra features information like address of postal code)
+response object : res.setHeader, 
+
+HTTP Methods: get, post, put, delete
+
+Status Codes: 
+ => 100 Rangs: Info Responses
+ => 200 Rangs: Success Codes
+ => 300 Rangs: Redirect
+ => 400 Rangs: User/Client Error
+ => 500 Rangs: Internal Server Error
+
+JSON:
+ => JavaScript Object Notation
+ => lightweight data-interchange formate
+ => plain text written in JavaScript object Notation
+
+NPM: 
+ => Er. Sushan Shakya.
+ => Node Package Manager
+
+Package.json:
+ => data of data called metadata
+
+Semantic versioning:
+ => major.
+
+
+
