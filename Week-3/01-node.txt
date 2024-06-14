@@ -35,5 +35,11 @@ Package.json:
 Semantic versioning:
  => major.
 
+package.json file add "type": "module" than you can do:
+ => export {add, sub} in calculation.js file
+ => import (add, sub) from "./calculation.js" in index.js file //best way because of this style works in React.js
+
+pwd => find current directory
+
 
 
