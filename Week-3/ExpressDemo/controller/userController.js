@@ -1,5 +1,6 @@
 let {users} = require('../data')
 
+
 function getUser(req, res) {
     let id = req.query.id;
     if(id) {
@@ -38,5 +39,7 @@ function deleteUser (req, res) {
     users = users.filter((user) => user.id != id);
     res.send({message: "User deleted"})
 }
+
+
 
 module.exports = {getUser, addUser, updateUser, deleteUser };

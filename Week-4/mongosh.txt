@@ -1,0 +1,87 @@
+MongoDB
+______________
+
+* Nosql document Database
+* Store data in the form of BSON
+* Data stored inside the Collection
+* Runs on default port 27017
+
+SQL terminolog           MongoDB terminology
+______________           ______________________
+Database                 Database
+Table                    Collection
+Row                      Document
+Column                   Field
+
+Installing MongoDB Server and MongoDB Shell
+-------------------------------------------
+https://www.mongodb.com/try/download//community
+https://www.mongodb.com/try/download/Shell
+
+URL: mongodb://localhost:27017/ => connect
+
+>_MONGOSH
+test> (what is test => by default test shown in the MONGOSH)
+
+test> use Batch2 -----------------------> (1) (create the database)
+Batch2> show dbs; ----------------------> (2) (shows the database)
+<HCOE            164.00kiB
+TravelPlanner     68.00kiB
+admin             40.00kiB
+config            72.00kiB
+local             72.00kiB
+
+Batch2> db -----------------------------> (3) (like node.this)
+<Batch2
+Batch2> db.users.insertOne({username: "Janak.Bohara", password: "Janak007"}); -----------> (4) (create collection users and insert document with single object)
+< {
+    acknowledge: true,
+    insertedId: ObjectId('6670dee0e50fc11451287644')
+}
+Batch2> db.users.insertMany([{username: "Gita.Thakurathi, password: "Gita006"}, {username: "Milan.Thakurathi, password: "Milan005"}]); ---------------(5) (insert Multipal document in once a time)
+< {
+    acknowledge: true,
+    insertedId: {
+        '0': ObjectId('66688347375398fdgghkh5975'),
+        '1': ObjectId('66837438575fjdkgjejgg9555')
+    }
+}
+Batch2> db.users.find(); ---------------------------------> (6) (find tha all document of users collection)
+
+Batch2> db.users.fineOne(); ------------------------------> (7) (find the first document of users collection)
+
+Batch2> db.users.find({username: "Janak.Bohara"}) ----> (8) (find the identical value of users document)
+
+Batch2> db.users.findOne({username: "Janak.Bohara"}, {username: 1}) --> (9) (only fine username, not password)
+
+Batch2> db.users.findOne({username: "Janak.Bohara"}, {username: 1, _id: 0}) --------(10) (only find username, and hide the _id)
+
+Batch2> db.users.countDocuments(); --------------> (11) (conunt the total document of collection)
+
+Batch2> db.users.find().limit(2); ---------------> (12) (find out only first two documents)
+
+Batch2> db.users.find().sort(username: 1) ---------(13) (base the users collection for ascending order use 1, and for deascending order use -1)
+
+Batch2> db.users.find().sort() => it called method chaining.
+
+MongoDB Operators
+-----------------
+Operators          Description
+_________          ______________
+$gt                Greater than
+$lt                Less than
+$gte               Greater than equals total
+$lte               Less than equals total
+$in                In 
+$nin               Not in
+
+Batch2> db.stocks.insertMany([{product: 'A', stock: 10}, {product: 'B', stock: 20}, {product: 'C', stock: 30}]);
+Batch2> db.stocks.find({stock: {$gt: 10}}); ---------> (14) (find document value greater than 10)
+
+Batch2> db.stocks.find({product: {$in: ['A', 'B']}}); --> (15) (find include value indicated by 'A' and 'B')
+
+Batch2> db.stocks.find({product: {$nin: ['A']}}); ------> (16) (outcomes exclude 'A')
+
+Batch2> db.stocks.updateOne({product: 'A'}, {$set: {product: 'R', stock: 100}}); ----> (17) (update the document key value)
+
+

@@ -7,7 +7,7 @@ const postRouter = require('./router/postRouter');
 
 const app = express();
 app.use(express.json());
-
+debugger
 app.get('/', (req, res) => {
     res.send("<h1>Server is running</h1>")
 });
